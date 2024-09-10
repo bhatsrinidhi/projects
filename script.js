@@ -24,11 +24,11 @@ function addRecord() {
     statusDiv.textContent = "Created"
     statusDiv.className = "cell"
 
-
-
-    recordDiv.appendChild(teamIDDiv);
-    recordDiv.appendChild(descriptionDiv);
-    recordDiv.appendChild(statusDiv);
+    setTimeout(() => {
+        recordDiv.appendChild(teamIDDiv);
+        recordDiv.appendChild(descriptionDiv);
+        recordDiv.appendChild(statusDiv);
+    }, 1000)
 
     document.getElementById("recordsContainer").appendChild(recordDiv);
 }
