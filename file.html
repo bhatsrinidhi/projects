@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Add Bug Record
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="teamForm">
+        <label for="teamID">Team JIRA ID:</label>
+        <input id="teamID"type="text" required><br><br>
+        <label for="description">Description of Bug:</label>
+        <textarea id="description" required></textarea><br><br>
+        <button type="button" id="addRecordButton">Add Bug to Record</button><br> <br><br>
+        </div>
+        <h3>Bug Records</h3>
+        <div id=recordsContainer class="table">
+            <div class="row">
+                <div class="cell">JIRA ID</div>
+                <div class="cell">Description</div>
+                <div class="cell">Status</div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
